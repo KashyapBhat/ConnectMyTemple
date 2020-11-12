@@ -1,13 +1,24 @@
+import 'package:connect_my_temple/screens/home_screen.dart';
+import 'package:connect_my_temple/screens/login_screen.dart';
+import 'package:connect_my_temple/screens/registration_screen.dart';
+import 'package:connect_my_temple/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
+import 'common/Constants.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(ConnectMyTempleApp());
 
-class MyApp extends StatelessWidget {
+class ConnectMyTempleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Connect My Temple',
-      home: null,
+      initialRoute: WelcomeScreen.id,
+      routes: {
+        WelcomeScreen.id: (context) => WelcomeScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+        RegistrationScreen.id: (context) => RegistrationScreen(),
+        HomeScreen.id: (context) => HomeScreen(),
+      },
+      title: APP_NAME,
     );
   }
 }
