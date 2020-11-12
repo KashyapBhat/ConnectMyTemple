@@ -28,6 +28,30 @@
       });
     }
   </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAu17oNrXoMqQChAIt-OqIv5MhMnVMUyyc",
+    authDomain: "connectmytemple.firebaseapp.com",
+    databaseURL: "https://connectmytemple.firebaseio.com",
+    projectId: "connectmytemple",
+    storageBucket: "connectmytemple.appspot.com",
+    messagingSenderId: "212179692366",
+    appId: "1:212179692366:web:b0aeb5cfad18556096cc1f",
+    measurementId: "G-WRTE5ZBSBJ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

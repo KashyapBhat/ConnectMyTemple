@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "212179692366",
+    "firebase_url": "https://connectmytemple.firebaseio.com",
+    "project_id": "connectmytemple",
+    "storage_bucket": "connectmytemple.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212179692366:android:752328f4d81dde8696cc1f",
+        "android_client_info": {
+          "package_name": "in.codingcurve.connect_my_temple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212179692366-4c0i1sfnbhfp92seataaat3s4u6frgjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArygQOwGtQAOT3KLf_1fVEYT2acPiLpLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212179692366-4c0i1sfnbhfp92seataaat3s4u6frgjm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
