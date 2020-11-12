@@ -1,0 +1,31 @@
+name: connect_my_temple
+description: Provides assistance to temple managers and their devotees
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+
+# Issues faced and their resolutions:
+
+# If there is flutter doctor error
+# "Flutter plugin not installed error;. When running flutter doctor"
+# Just run in the Terminal this command
+# ln -s ~/Library/Application\ Support/Google/AndroidStudio4.1/plugins ~/Library/Application\ Support/AndroidStudio4.1
