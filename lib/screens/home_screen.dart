@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             MessagesStream(),
             Container(
-              decoration: kMessageContainerDecoration,
+              decoration: MESSAGE_CONTAINER_DECORATION,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onChanged: (value) {
                         messageText = value;
                       },
-                      decoration: kMessageTextFieldDecoration,
+                      decoration: MESSAGE_TEST_FIELD_DECORATION,
                     ),
                   ),
                   FlatButton(
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     child: Text(
                       'Send',
-                      style: kSendButtonTextStyle,
+                      style: SEND_BUTTON_TEST_STYLE,
                     ),
                   ),
                 ],

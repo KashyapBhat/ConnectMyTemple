@@ -1,7 +1,9 @@
+import 'package:connect_my_temple/common/Constants.dart';
 import 'package:connect_my_temple/components/rounded_button.dart';
 import 'package:connect_my_temple/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'login_screen.dart';
 
@@ -54,16 +56,17 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     child: Hero(
                       tag: 'logo',
                       child: Container(
-                        child: Image.asset('images/logo.png'),
+                        child: SvgPicture.asset('images/logo.svg',
+                            semanticsLabel: 'Logo'),
                         height: 60.0,
                       ),
                     ),
                   ),
                   Expanded(
                     child: TypewriterAnimatedTextKit(
-                      text: ['Flash Chat'],
+                      text: [APP_NAME],
                       textStyle: TextStyle(
-                        fontSize: 45.0,
+                        fontSize: 40.0,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
@@ -87,6 +90,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },
+            ),
+            SizedBox(
+              height: 48.0,
             ),
           ],
         ),

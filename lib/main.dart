@@ -1,5 +1,6 @@
 import 'package:connect_my_temple/screens/home_screen.dart';
 import 'package:connect_my_temple/screens/login_screen.dart';
+import 'package:connect_my_temple/screens/on_boarding.dart';
 import 'package:connect_my_temple/screens/registration_screen.dart';
 import 'package:connect_my_temple/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +12,9 @@ class ConnectMyTempleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: WelcomeScreen.id,
+      initialRoute: OnBoardingScreen.id,
       routes: {
+        OnBoardingScreen.id: (context) => OnBoardingScreen(),
         WelcomeScreen.id: (context) => WelcomeScreen(),
         LoginScreen.id: (context) => LoginScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
